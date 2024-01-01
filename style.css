@@ -1,0 +1,204 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, rgb(240, 240, 250), rgb(200, 200, 200), rgb(175, 250, 150), rgb(120, 100, 200), rgb(150, 150, 120));
+  background-repeat: repeat;
+  background-size: 1000%;
+  background-position: 0% 0%;
+  transition: background-position .5s ease-in-out;
+}
+#klm {
+  font-family: Rubik Doodle Shadow;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  font-size: 70px;
+}
+
+#trt {
+  font-family: Rubik Doodle Shadow;
+  position: absolute;
+  top: 9%;
+  left: 12%;
+  font-size: 70px;
+}
+
+.bslk {
+  transition: all 1s ease;
+}
+
+.kel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  transition: all 1.5s ease;
+  opacity: 1;
+  animation-delay: .25s;
+  animation: fadeIn 1s ease; /* Add a fade-in animation */
+  z-index: 2;
+}
+@keyframes fail{
+  from{border-bottom: 2px rgb(0, 0, 0) solid; color: rgb(0, 0, 0)}
+  to{border-bottom: 2px rgb(200, 70, 70) solid; color: rgb(200, 70, 70)}
+}
+@keyframes fadeIn {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+@keyframes scale{
+  0%{scale: 1}
+  70%{scale: 1.1}
+  100%{scale: 0}
+}
+@keyframes scaleters{
+  0%{scale: 0}
+  70%{scale: 1.1}
+  100%{scale: 1}
+}
+.hrf {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 2em;
+  height: 150%;
+  border-radius: 0px;
+  text-shadow: rgba(10, 10, 30, .3) 0px 0px 5px;
+  border: 1px solid transparent;
+  border-top: none;
+  background: transparent;
+  border-color: none;
+  border-bottom: solid;
+  border-bottom-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: border-bottom-color ease .35s;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.yok{
+  left: 0;
+  top: 0;
+}
+.gk {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 5em;
+  height: 2%;
+  text-shadow: rgba(10, 10, 30, .3) 0px 0px 5px;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s ease;
+  letter-spacing: 2px;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -88% -50%;
+  z-index: 5;
+  animation: fadeIn 1s ease-in-out; /* Add a fade-in and stair-like movement animation */
+}
+.yok {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 5em;
+  height: 2%;
+  text-shadow: rgba(10, 10, 30, .3) 0px 0px 5px;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s ease;
+  letter-spacing: 2px;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -88% -50%;
+  z-index: 5;
+  animation: fadeIn 1s ease-in-out; /* Add a fade-in and stair-like movement animation */
+}
+/* ... (Your existing styles) ... */
+.btn{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: inline-block;
+  width: 20em;
+  height: 10em;
+  border-radius: 30px;
+  background-color: rgba(50, 220, 20, .9);
+  box-shadow: rgb(30, 220, 30) 0px 0px 20px;
+}
+.btnb{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: inline-block;
+  width: 30%;
+  height: 20%;
+  border-radius: 30px;
+  background-color: rgba(220, 50, 20, .9);
+  box-shadow: rgb(220, 30, 30) 0px 0px 20px;
+  animation: gg 1s ease-in-out forwards;
+}
+#ply{
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
+  margin-bottom: -4em;
+  margin-right: -1em;
+}
+.oyn{
+  display: inline-block;
+  font-family: Josefin Sans;
+  font-size: 35px;
+  position: relative;
+  color: white;
+}
+@keyframes bb{
+  0%{bottom: 5%; right: 5%;}
+  20%{bottom: 7.5%; right: 5%;}
+  80%{bottom: -20%; right: 5%;}
+  100%{bottom: -20%; right: 5%; display: none; visibility: hidden;}
+}
+@keyframes gg{
+  0%{bottom: -20%; right: 5%; display: none; visibility: hidden;}
+  20%{bottom: -20%; right: 5%;}
+  80%{bottom: 7.5%; right: 5%;}
+  100%{bottom: 5%; right: 5%;}
+}
+@keyframes shake{
+  0%{left: 50%; top: 50%; transform: translate(-50%, -50%)}
+  50%{left: 55%; top: 50%; transform: translate(-50%, -50%); color: rgb(200, 70, 70); border-bottom: 2px rgb(200, 70, 70) solid;}
+  100%{left: 50%; top: 50%; transform: translate(-50%, -50%)}
+}
+.shake{
+  animation: shake .5s ease-in-out alternate;
+  animation-iteration-count: 2;
+}
