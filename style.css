@@ -22,7 +22,7 @@ body {
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 100%;
+  font-size: 300%;
 }
 
 #trt {
@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 12%;
   left: 12%;
-  font-size: 100%;
+  font-size: 300%;
 }
 
 .bslk {
@@ -223,7 +223,7 @@ body {
   position: absolute;
   top: 0;
   left: 5%;
-  font-size: 300%;
+  font-size: 500%;
 }
 
 #trt {
@@ -231,7 +231,7 @@ body {
   position: absolute;
   top: 9%;
   left: 12%;
-  font-size: 300%;
+  font-size: 500%;
 }
 
 .bslk {
