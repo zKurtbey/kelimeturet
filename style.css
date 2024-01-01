@@ -22,7 +22,7 @@ body {
   position: absolute;
   top: 0;
   left: 5%;
-  font-size: 70px;
+  font-size: 50%;
 }
 
 #trt {
@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 9%;
   left: 12%;
-  font-size: 70px;
+  font-size: 50%;
 }
 
 .bslk {
