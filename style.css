@@ -2,7 +2,7 @@ html {
   height: 100%;
   width: 100%;
 }
-@media(max-width: 1024px{
+@media(max-width: 1024px){
 body {
   margin: 0;
   display: flex;
@@ -203,7 +203,7 @@ body {
   animation-iteration-count: 2;
 }
 }
-@media(min-width: 1024px{
+@media(min-width: 1024px){
 body {
   margin: 0;
   display: flex;
