@@ -182,6 +182,7 @@ async function combineValues() {
           gk.classList.add("yok");
           document.querySelector('.yok').remove();
         });
+        lastword = [];
         setTimeout(() => {
           divs.remove();
         }, 500);
