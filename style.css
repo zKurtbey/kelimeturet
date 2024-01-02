@@ -194,7 +194,7 @@ body {
   height: 6em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
   margin-bottom: -2em;
-  margin-right: -.75em;
+  margin-right: -1.25em;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
