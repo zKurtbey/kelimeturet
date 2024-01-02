@@ -115,7 +115,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: -100% -60%;
+  translate: -150% -90%;
   z-index: 5;
   animation: fadeIn 1s ease-in-out; /* Add a fade-in and stair-like movement animation */
 }
@@ -161,7 +161,7 @@ body {
   height: 5em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
   margin-bottom: -2em;
-  margin-right: -.25em;
+  margin-right: -.75em;
   cursor: pointer;
 }
 .oyn{
