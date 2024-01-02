@@ -394,4 +394,7 @@ body {
   animation: shake .5s ease-in-out alternate;
   animation-iteration-count: 2;
 }
+  @keyframes ynlbdy{
+    to{background-position: 0% 0%}
+  }
 }
