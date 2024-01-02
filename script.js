@@ -166,7 +166,7 @@ async function combineValues() {
         hrf.style="animation: fail .5s ease-in-out alternate; animation-iteration-count: 5; border-bottom: 2px rgb(200, 70, 70) solid; color: rgb(200, 70, 70);";
       });
     setTimeout(() => {
-      document.body.style.backgroundPosition="0% 0%";
+      document.body.style.banimation="ynlbdy 1s ease-in-out";
       const gk = document.querySelectorAll('.gk');
       if(gk){
         gk.forEach((gk) => {
