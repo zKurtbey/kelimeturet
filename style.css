@@ -148,36 +148,24 @@ body {
   bottom: 5%;
   right: 5%;
   display: inline-block;
-  width: 20em;
-  height: 10em;
+  width: 10em;
+  height: 5em;
   border-radius: 30px;
   background-color: rgba(50, 220, 20, .9);
   box-shadow: rgb(30, 220, 30) 0px 0px 20px;
 }
-.btnb{
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  display: inline-block;
-  width: 30%;
-  height: 20%;
-  border-radius: 30px;
-  background-color: rgba(220, 50, 20, .9);
-  box-shadow: rgb(220, 30, 30) 0px 0px 20px;
-  animation: gg 1s ease-in-out forwards;
-}
 #ply{
   display: inline-block;
-  width: 10em;
-  height: 10em;
+  width: 2.5em;
+  height: 2.5em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
-  margin-bottom: -4em;
-  margin-right: -1em;
+  margin-bottom: -1em;
+  margin-right: -.25em;
 }
 .oyn{
   display: inline-block;
   font-family: Josefin Sans;
-  font-size: 35px;
+  font-size: 15px;
   position: relative;
   color: white;
 }
@@ -223,7 +211,7 @@ body {
   position: absolute;
   top: 0;
   left: 5%;
-  font-size: 70px;
+  font-size: 120px;
 }
 
 #trt {
@@ -231,7 +219,7 @@ body {
   position: absolute;
   top: 9%;
   left: 12%;
-  font-size: 70px;
+  font-size: 120px;
 }
 
 .bslk {
