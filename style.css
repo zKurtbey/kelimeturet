@@ -153,6 +153,7 @@ body {
   border-radius: 10px;
   background-color: rgba(50, 220, 20, .9);
   box-shadow: rgb(30, 220, 30) 0px 0px 20px;
+  cursor: pointer;
 }
 #ply{
   display: inline-block;
@@ -161,6 +162,7 @@ body {
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
   margin-bottom: -1em;
   margin-right: -.25em;
+  cursor: pointer;
 }
 .oyn{
   display: inline-block;
@@ -168,6 +170,7 @@ body {
   font-size: 15px;
   position: relative;
   color: white;
+  cursor: pointer;
 }
 @keyframes bb{
   0%{bottom: 5%; right: 5%;}
@@ -345,18 +348,7 @@ body {
   border-radius: 30px;
   background-color: rgba(50, 220, 20, .9);
   box-shadow: rgb(30, 220, 30) 0px 0px 20px;
-}
-.btnb{
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  display: inline-block;
-  width: 30%;
-  height: 20%;
-  border-radius: 30px;
-  background-color: rgba(220, 50, 20, .9);
-  box-shadow: rgb(220, 30, 30) 0px 0px 20px;
-  animation: gg 1s ease-in-out forwards;
+  cursor: pointer;
 }
 #ply{
   display: inline-block;
@@ -365,6 +357,7 @@ body {
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
   margin-bottom: -4em;
   margin-right: -1em;
+  cursor: pointer;
 }
 .oyn{
   display: inline-block;
@@ -372,6 +365,7 @@ body {
   font-size: 35px;
   position: relative;
   color: white;
+  cursor: pointer;
 }
 @keyframes bb{
   0%{bottom: 5%; right: 5%;}
