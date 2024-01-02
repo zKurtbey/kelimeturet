@@ -2,7 +2,7 @@ html {
   height: 100%;
   width: 100%;
 }
-@media(max-width: 719px){
+@media(max-width: 679px){
 body {
   margin: 0;
   display: flex;
@@ -176,6 +176,7 @@ body {
 }
 /* ... (Your existing styles) ... */
 .btn{
+  transition: all .5s ease-in-out;
   position: absolute;
   bottom: 10%;
   right: 10%;
@@ -195,8 +196,10 @@ body {
   margin-bottom: -2em;
   margin-right: -.75em;
   cursor: pointer;
+  transition: all .5s ease-in-out;
 }
 .oyn{
+  transition: all .5s ease-in-out;
   display: inline-block;
   font-family: Josefin Sans;
   font-size: 20px;
@@ -229,7 +232,13 @@ body {
     to{background-position: 0% 0%}
   }
 }
-@media(min-width: 720px){
+
+
+
+
+
+
+@media(min-width: 680px){
 body {
   margin: 0;
   display: flex;
@@ -404,6 +413,7 @@ body {
 }
 /* ... (Your existing styles) ... */
 .btn{
+  transition: all .5s ease-in-out;
   position: absolute;
   bottom: 5%;
   right: 5%;
@@ -416,6 +426,7 @@ body {
   cursor: pointer;
 }
 #ply{
+  transition: all .5s ease-in-out;
   display: inline-block;
   width: 10em;
   height: 10em;
@@ -425,6 +436,7 @@ body {
   cursor: pointer;
 }
 .oyn{
+  transition: all .5s ease-in-out;
   display: inline-block;
   font-family: Josefin Sans;
   font-size: 35px;
