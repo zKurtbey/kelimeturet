@@ -2,7 +2,7 @@ html {
   height: 100%;
   width: 100%;
 }
-@media(max-width: 1024px){
+@media(max-width: 720px){
 body {
   margin: 0;
   display: flex;
@@ -150,14 +150,14 @@ body {
   display: inline-block;
   width: 10em;
   height: 5em;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: rgba(50, 220, 20, .9);
   box-shadow: rgb(30, 220, 30) 0px 0px 20px;
 }
 #ply{
   display: inline-block;
-  width: 2.5em;
-  height: 2.5em;
+  width: 5em;
+  height: 5em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
   margin-bottom: -1em;
   margin-right: -.25em;
@@ -194,7 +194,7 @@ body {
     to{background-position: 0% 0%}
   }
 }
-@media(min-width: 1024px){
+@media(min-width: 721px){
 body {
   margin: 0;
   display: flex;
@@ -214,7 +214,7 @@ body {
   position: absolute;
   top: 0;
   left: 5%;
-  font-size: 120px;
+  font-size: 100px;
 }
 
 #trt {
@@ -222,7 +222,7 @@ body {
   position: absolute;
   top: 9%;
   left: 12%;
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .bslk {
