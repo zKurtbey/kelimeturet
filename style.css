@@ -145,8 +145,8 @@ body {
 /* ... (Your existing styles) ... */
 .btn{
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  bottom: 10%;
+  right: 10%;
   display: inline-block;
   width: 10em;
   height: 5em;
@@ -160,14 +160,14 @@ body {
   width: 5em;
   height: 5em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
-  margin-bottom: -1em;
+  margin-bottom: -4em;
   margin-right: -.25em;
   cursor: pointer;
 }
 .oyn{
   display: inline-block;
   font-family: Josefin Sans;
-  font-size: 15px;
+  font-size: 17.5px;
   position: relative;
   color: white;
   cursor: pointer;
