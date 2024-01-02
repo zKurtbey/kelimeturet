@@ -160,7 +160,7 @@ body {
   width: 5em;
   height: 5em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
-  margin-bottom: -4em;
+  margin-bottom: -2em;
   margin-right: -.25em;
   cursor: pointer;
 }
