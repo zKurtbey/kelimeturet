@@ -180,9 +180,9 @@ body {
   bottom: 10%;
   right: 10%;
   display: inline-block;
-  width: 10em;
-  height: 5em;
-  border-radius: 30px;
+  width: 11em;
+  height: 6em;
+  border-radius: 20px;
   background-color: rgba(50, 220, 20, .9);
   box-shadow: rgb(30, 220, 30) 0px 0px 20px;
   cursor: pointer;
@@ -199,7 +199,7 @@ body {
 .oyn{
   display: inline-block;
   font-family: Josefin Sans;
-  font-size: 22.5px;
+  font-size: 20px;
   position: relative;
   color: white;
   cursor: pointer;
