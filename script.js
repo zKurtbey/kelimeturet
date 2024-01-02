@@ -236,8 +236,11 @@ function dogru(){
     }, 100);
 }
 function harfuyus(){
-  document.getElementById("harfsebep").innerHTML="Son harfler uyuşmuyor!";
+  document.getElementById("hatasebep").innerHTML="Son harfler uyuşmuyor!";
   document.querySelector("#hata").style="animation: scaleters .5s ease-in-out alternate; animation-iteration-count: 2";
+  setTimeout(() => {
+    document.querySelector("#hata").style="";
+  }, 1000);
   document.querySelector(".kel").style="animation: scale .5s ease-in-out forwards";
   setTimeout(() => {
     setTimeout(() => {
@@ -251,8 +254,11 @@ function harfuyus(){
 }
 function oncedenyaz(){
   
-  document.getElementById("harfsebep").innerHTML="Bu kelimeyi zaten yazdınız!";
-  document.querySelector("#hata").style="animation: scaleters .5s ease-in-out alternate; animation-iteration-count: 2";
+  document.getElementById("hatasebep").innerHTML="Bu kelimeyi zaten yazdınız!";
+  document.querySelector("#hata").style="animation: scaleters .75s ease-in-out alternate; animation-iteration-count: 2";
+  setTimeout(() => {
+    document.querySelector("#hata").style="";
+  }, 1000);
   document.querySelector(".kel").style="animation: scale .5s ease-in-out forwards";
   setTimeout(() => {
     setTimeout(() => {
