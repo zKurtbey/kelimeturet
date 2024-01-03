@@ -14,6 +14,7 @@ function start() {
     createNewDiv();
     setupInputListeners(container);
     document.querySelector(".kel .hrf").focus();
+    lastword = [];
   } else{
     createNewDiv();
     function setupInputListeners(container) {
@@ -22,9 +23,11 @@ function start() {
       inputs.forEach(input => {
         input.addEventListener("input", () => moveToNextInput(input));
       });
+      lastword = [];
     }
     document.querySelector(".kel .hrf").focus();
   }
+  lastword = [];
 }
 function moveToNextInput(currentInput) {
   const inputValue = currentInput.value;
