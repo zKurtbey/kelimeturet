@@ -3,7 +3,7 @@ plybtn.addEventListener("click", () => {
   plybtn.style.animation="bb 1s ease-in-out forwards";
   start();
 });
-const lastword = [];
+let lastword = [];
 let a = 0;
 let container = document.getElementById('container');
 function start() {
@@ -289,6 +289,7 @@ function oncedenyaz(){
 
 }
 function fail(){
+lastword = [];
   a = 0;
     const hrf = document.querySelectorAll('.kel .hrf');
     hrf.forEach((hrf) => {
