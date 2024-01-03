@@ -99,6 +99,11 @@ function createNewDiv() {
       newInput.setAttribute("oninput", "moveToNextInput(this)");
       newInput.setAttribute("id", "basharf");
     newInput.maxLength = 1;
+    if(document.querySelector('.gk')){
+      let i = document.querySelectorAll('.gk').length - 1;
+      const gkson = document.querySelectorAll(".gk")[i];
+      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+    }
       var newInput = document.createElement('input');
       newInput.type = 'text';
       newDiv.appendChild(newInput);
@@ -121,6 +126,11 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
         newInput.setAttribute("id", "basharf");
     newInput.maxLength = 1;
+    if(document.querySelector('.gk')){
+      let i = document.querySelectorAll('.gk').length - 1;
+      const gkson = document.querySelectorAll(".gk")[i];
+      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+    }
         for (var i = 0; i < 2; i++) {
           var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -145,6 +155,11 @@ function createNewDiv() {
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           newInput.setAttribute("id", "basharf");
     newInput.maxLength = 1;
+    if(document.querySelector('.gk')){
+      let i = document.querySelectorAll('.gk').length - 1;
+      const gkson = document.querySelectorAll(".gk")[i];
+      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+    }
           for (var i = 0; i < 3; i++) {
             var newInput = document.createElement('input');
             newInput.type = 'text';
@@ -193,6 +208,11 @@ function createNewDiv() {
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           newInput.setAttribute("id", "basharf");
     newInput.maxLength = 1;
+    if(document.querySelector('.gk')){
+      let i = document.querySelectorAll('.gk').length - 1;
+      const gkson = document.querySelectorAll(".gk")[i];
+      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+    }
           for (var i = 0; i < 4; i++) {
             var newInput = document.createElement('input');
             newInput.type = 'text';
