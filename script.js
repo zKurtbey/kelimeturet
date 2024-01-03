@@ -51,6 +51,7 @@ async function combineValues() {
     inputs.forEach(input => {
       const kck = input.value.toLowerCase();
       word += kck;
+      const maxLength = 1;
     });
   console.log(word);
   try {
@@ -95,11 +96,13 @@ function createNewDiv() {
       newInput.classList.add("hrf");
       newInput.setAttribute("oninput", "moveToNextInput(this)");
       newInput.setAttribute("id", "basharf");
+    const maxLength = 1;
       var newInput = document.createElement('input');
       newInput.type = 'text';
       newDiv.appendChild(newInput);
       newInput.classList.add("hrf");
       newInput.setAttribute("oninput", "moveToNextInput(this)");
+    const maxLength = 1;
       var newInput = document.createElement('input');
       newInput.type = 'text';
       newDiv.appendChild(newInput);
@@ -107,6 +110,7 @@ function createNewDiv() {
       newInput.setAttribute("oninput", "moveToNextInput(this)");
       document.querySelector(".kel .hrf").focus();
       newInput.setAttribute("id", "sonharf");
+    const maxLength = 1;
     } else if (a <= 10){
         var newInput = document.createElement('input');
         newInput.type = 'text';
@@ -114,12 +118,14 @@ function createNewDiv() {
         newInput.classList.add("hrf");
         newInput.setAttribute("oninput", "moveToNextInput(this)");
         newInput.setAttribute("id", "basharf");
+    const maxLength = 1;
         for (var i = 0; i < 2; i++) {
           var newInput = document.createElement('input');
           newInput.type = 'text';
           newDiv.appendChild(newInput);
           newInput.classList.add("hrf");
           newInput.setAttribute("oninput", "moveToNextInput(this)");
+          const maxLength = 1;
         }
         var newInput = document.createElement('input');
         newInput.type = 'text';
@@ -128,6 +134,7 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
         document.querySelector(".kel .hrf").focus();
         newInput.setAttribute("id", "sonharf");
+    const maxLength = 1;
     } else if (a <= 15){
         var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -135,12 +142,14 @@ function createNewDiv() {
           newInput.classList.add("hrf");
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           newInput.setAttribute("id", "basharf");
+    const maxLength = 1;
           for (var i = 0; i < 3; i++) {
             var newInput = document.createElement('input');
             newInput.type = 'text';
             newDiv.appendChild(newInput);
             newInput.classList.add("hrf");
             newInput.setAttribute("oninput", "moveToNextInput(this)");
+            const maxLength = 1;
           }
           var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -149,6 +158,7 @@ function createNewDiv() {
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           document.querySelector(".kel .hrf").focus();
           newInput.setAttribute("id", "sonharf");
+    const maxLength = 1;
     } else if (a <= 20){
         var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -156,12 +166,14 @@ function createNewDiv() {
           newInput.classList.add("hrf");
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           newInput.setAttribute("id", "basharf");
+    const maxLength = 1;
           for (var i = 0; i < 4; i++) {
             var newInput = document.createElement('input');
             newInput.type = 'text';
             newDiv.appendChild(newInput);
             newInput.classList.add("hrf");
             newInput.setAttribute("oninput", "moveToNextInput(this)");
+            const maxLength = 1;
           }
           var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -170,6 +182,7 @@ function createNewDiv() {
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           document.querySelector(".kel .hrf").focus();
           newInput.setAttribute("id", "sonharf");
+    const maxLength = 1;
         } else if (a > 20){
         var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -177,12 +190,14 @@ function createNewDiv() {
           newInput.classList.add("hrf");
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           newInput.setAttribute("id", "basharf");
+    const maxLength = 1;
           for (var i = 0; i < 4; i++) {
             var newInput = document.createElement('input');
             newInput.type = 'text';
             newDiv.appendChild(newInput);
             newInput.classList.add("hrf");
             newInput.setAttribute("oninput", "moveToNextInput(this)");
+            const maxLength = 1;
           }
           var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -191,6 +206,7 @@ function createNewDiv() {
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           document.querySelector(".kel .hrf").focus();
           newInput.setAttribute("id", "sonharf");
+    const maxLength = 1;
         }
   a++;
 }
