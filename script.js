@@ -118,7 +118,7 @@ function createNewDiv() {
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
       document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[2].focus();
+      document.querySelectorAll('.kel input')[1].focus();
     }
     } else if (a <= 10){
         var newInput = document.createElement('input');
@@ -133,7 +133,7 @@ function createNewDiv() {
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
       document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[2].focus();
+      document.querySelectorAll('.kel input')[1].focus();
     }
         for (var i = 0; i < 2; i++) {
           var newInput = document.createElement('input');
@@ -180,7 +180,7 @@ function createNewDiv() {
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
       document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[2].focus();
+      document.querySelectorAll('.kel input')[1].focus();
     }
     } else if (a <= 20){
         var newInput = document.createElement('input');
@@ -211,7 +211,7 @@ function createNewDiv() {
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
       document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[2].focus();
+      document.querySelectorAll('.kel input')[1].focus();
     }
         } else if (a > 20){
         var newInput = document.createElement('input');
@@ -242,7 +242,7 @@ function createNewDiv() {
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
       document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[2].focus();
+      document.querySelectorAll('.kel input')[1].focus();
     }
         }
   a++;
