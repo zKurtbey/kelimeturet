@@ -103,6 +103,8 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+      moveToNextInput(currentInput);
+      document.querySelectorAll('.kel input')[2].focus();
     }
       var newInput = document.createElement('input');
       newInput.type = 'text';
@@ -130,6 +132,8 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+      moveToNextInput(currentInput);
+      document.querySelectorAll('.kel input')[2].focus();
     }
         for (var i = 0; i < 2; i++) {
           var newInput = document.createElement('input');
@@ -159,6 +163,8 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+      moveToNextInput(currentInput);
+      document.querySelectorAll('.kel input')[2].focus();
     }
           for (var i = 0; i < 3; i++) {
             var newInput = document.createElement('input');
@@ -184,6 +190,13 @@ function createNewDiv() {
           newInput.setAttribute("oninput", "moveToNextInput(this)");
           newInput.setAttribute("id", "basharf");
     newInput.maxLength = 1;
+    if(document.querySelector('.gk')){
+      let i = document.querySelectorAll('.gk').length - 1;
+      const gkson = document.querySelectorAll(".gk")[i];
+      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+      moveToNextInput(currentInput);
+      document.querySelectorAll('.kel input')[2].focus();
+    }
           for (var i = 0; i < 4; i++) {
             var newInput = document.createElement('input');
             newInput.type = 'text';
@@ -212,6 +225,8 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+      moveToNextInput(currentInput);
+      document.querySelectorAll('.kel input')[2].focus();
     }
           for (var i = 0; i < 4; i++) {
             var newInput = document.createElement('input');
