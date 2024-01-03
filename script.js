@@ -128,13 +128,6 @@ function createNewDiv() {
         newInput.setAttribute("oninput", "moveToNextInput(this)");
         newInput.setAttribute("id", "basharf");
     newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      const gkson = document.querySelectorAll(".gk")[i];
-      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[1].focus();
-    }
         for (var i = 0; i < 2; i++) {
           var newInput = document.createElement('input');
           newInput.type = 'text';
@@ -151,6 +144,13 @@ function createNewDiv() {
         document.querySelector(".kel .hrf").focus();
         newInput.setAttribute("id", "sonharf");
     newInput.maxLength = 1;
+    if(document.querySelector('.gk')){
+      let i = document.querySelectorAll('.gk').length - 1;
+      const gkson = document.querySelectorAll(".gk")[i];
+      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
+      document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
+      document.querySelectorAll('.kel input')[1].focus();
+    }
     } else if (a <= 15){
         var newInput = document.createElement('input');
           newInput.type = 'text';
