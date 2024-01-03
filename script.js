@@ -103,7 +103,7 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      moveToNextInput(currentInput);
+      moveToNextInput();
       document.querySelectorAll('.kel input')[2].focus();
     }
       var newInput = document.createElement('input');
@@ -132,7 +132,7 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      moveToNextInput(currentInput);
+      moveToNextInput();
       document.querySelectorAll('.kel input')[2].focus();
     }
         for (var i = 0; i < 2; i++) {
@@ -163,7 +163,7 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      moveToNextInput(currentInput);
+      moveToNextInput();
       document.querySelectorAll('.kel input')[2].focus();
     }
           for (var i = 0; i < 3; i++) {
@@ -194,7 +194,7 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      moveToNextInput(currentInput);
+      moveToNextInput();
       document.querySelectorAll('.kel input')[2].focus();
     }
           for (var i = 0; i < 4; i++) {
@@ -225,7 +225,7 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       const gkson = document.querySelectorAll(".gk")[i];
       document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      moveToNextInput(currentInput);
+      moveToNextInput();
       document.querySelectorAll('.kel input')[2].focus();
     }
           for (var i = 0; i < 4; i++) {
