@@ -28,10 +28,36 @@ body {
 #trt {
   font-family: Rubik Doodle Shadow;
   position: absolute;
-  top: 12%;
+  top: 14%;
   left: 12%;
   font-size: 300%;
 }
+  #chckb{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 5%;
+    right: 5%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 7em;
+    height: 3em;
+  }
+  .chck{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .chckyz{
+    position: relative;
+    font-family: Josefin Sans;
+    display: inline-block;
+    font-size: 10px;
+  }
   #hata{
     position: absolute;
     right: 0;
@@ -174,35 +200,83 @@ body {
   z-index: 5;
   animation: fadeIn 1s ease-in-out; /* Add a fade-in and stair-like movement animation */
 }
+  .ynl{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(220, 220, 220, .95);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 200px rgba(0, 0, 0, .5);
+    display: block;
+    visibility: hidden;
+    align-self: center;
+  }
+  #ynlyz{
+    display: inline-block;
+    color: rgb(220, 60, 70);
+    text-shadow: rgba(220, 50, 50, .5) 0px 0px 5px;
+    font-family: Josefin sans;
+    font-weight: bolder;
+    font-size: 35px;
+  }
+  #Layer_1{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    display: inline-block;
+  }
+  #ynlskr{
+    display: inline-block;
+    color: rgb(0, 60, 70);
+    text-shadow: rgba(0, 40, 70, .3) 0px 0px 5px;
+    font-family: Josefin sans;
+    font-weight: lighter;
+    margin-top: -15px;
+  }
+  @keyframes ynl{
+    0%{scale: 0; visibility: hidden;}
+    60%{scale: 1.1; visibility: visible;}
+    100%{scale: 1; visibility: visible;}
+  }
+  @keyframes ynlkpt{
+    0%{scale: 1; visibility: visible;}
+    40%{scale: 1.05; visibility: visible;}
+    100%{scale: 0; visibility: hidden;}
+  }
 /* ... (Your existing styles) ... */
 .btn{
-  transition: all .5s ease-in-out;
   position: absolute;
   bottom: 10%;
   right: 10%;
   display: inline-block;
-  width: 11em;
-  height: 6em;
-  border-radius: 20px;
+  width: 10em;
+  height: 5em;
+  border-radius: 30px;
   background-color: rgba(50, 220, 20, .9);
   box-shadow: rgb(30, 220, 30) 0px 0px 20px;
   cursor: pointer;
 }
 #ply{
   display: inline-block;
-  width: 6em;
-  height: 6em;
+  width: 5em;
+  height: 5em;
   filter: drop-shadow(rgba(200, 255, 200, .5) 0px 0px 5px);
-  margin-bottom: -2.35em;
-  margin-right: -1.25em;
+  margin-bottom: -2em;
+  margin-right: -.75em;
   cursor: pointer;
-  transition: all .5s ease-in-out;
 }
 .oyn{
-  transition: all .5s ease-in-out;
   display: inline-block;
   font-family: Josefin Sans;
-  font-size: 20px;
+  font-size: 22.5px;
   position: relative;
   color: white;
   cursor: pointer;
@@ -232,12 +306,6 @@ body {
     to{background-position: 0% 0%}
   }
 }
-
-
-
-
-
-
 @media(min-width: 680px){
 body {
   margin: 0;
@@ -268,7 +336,34 @@ body {
   left: 12%;
   font-size: 90px;
 }
-
+#chckb{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 5%;
+    right: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    height: 3em;
+  }
+  .chck{
+    position: relative;
+    width: 3em;
+    height: 3em;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: -.25em;
+  }
+  .chckyz{
+    position: relative;
+    font-family: Josefin Sans;
+    display: inline-block;
+    font-size: 15px;
+    width: 12em;
+  }
   #hata{
     position: absolute;
     right: 0;
@@ -411,9 +506,77 @@ body {
   z-index: 5;
   animation: fadeIn 1s ease-in-out; /* Add a fade-in and stair-like movement animation */
 }
+  .ynl{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 45%;
+    height: 85%;
+    background-color: rgba(235, 235, 235, .95);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px;
+    display: block;
+    visibility: hidden;
+    align-self: center;
+  }
+  .vignette{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 7;
+    visibility: hidden;
+  }
+  @keyframes vignet{
+    to{visibility: visible; box-shadow: 0px 0px 300px rgba(0, 0, 0, .9) inset}
+  }
+  @keyframes vignetbck{
+    to{box-shadow: 0px 0px 0px rgba(0, 0, 0, .9) inset}
+}
+  #ynlyz{
+    display: inline-block;
+    color: rgb(220, 60, 70);
+    text-shadow: rgba(220, 50, 50, .5) 0px 0px 5px;
+    font-family: Josefin sans;
+    font-weight: bolder;
+    font-size: 60px;
+  }
+  #Layer_1{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #ynlskr{
+    display: inline-block;
+    color: rgb(0, 60, 70);
+    text-shadow: rgba(0, 40, 70, .3) 0px 0px 5px;
+    font-family: Josefin sans;
+    font-weight: lighter;
+    margin-top: -15px;
+  }
+  @keyframes ynl{
+    0%{scale: 0; visibility: hidden;}
+    60%{scale: 1.05; visibility: visible;}
+    100%{scale: 1; visibility: visible;}
+  }
+  @keyframes ynlkpt{
+    0%{scale: 1; visibility: visible;}
+    40%{scale: 1.05; visibility: visible;}
+    100%{scale: 0; visibility: hidden;}
+  }
 /* ... (Your existing styles) ... */
 .btn{
-  transition: all .5s ease-in-out;
   position: absolute;
   bottom: 5%;
   right: 5%;
@@ -426,7 +589,6 @@ body {
   cursor: pointer;
 }
 #ply{
-  transition: all .5s ease-in-out;
   display: inline-block;
   width: 10em;
   height: 10em;
@@ -436,7 +598,6 @@ body {
   cursor: pointer;
 }
 .oyn{
-  transition: all .5s ease-in-out;
   display: inline-block;
   font-family: Josefin Sans;
   font-size: 35px;
