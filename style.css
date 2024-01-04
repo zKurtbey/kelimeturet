@@ -516,7 +516,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 10;
     width: 45%;
-    max-width: 510px;
+    max-width: 480px;
     height: 85%;
     background-color: rgba(235, 235, 235, .95);
     backdrop-filter: blur(100px);
