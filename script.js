@@ -77,7 +77,6 @@ async function combineValues() {
   if(document.querySelector('.gk')){
   console.log(lastword);
   }
-  console.log(word);
   if(a <= 5){
     harfuc();
   } else{
