@@ -77,14 +77,6 @@ async function combineValues() {
   if(document.querySelector('.gk')){
   console.log(lastword);
   }
-  let word = '';
-  const divs = document.querySelector('.kel');
-  const inputs = divs.querySelectorAll('.kel input');
-    inputs.forEach(input => {
-      const kck = input.value.toLowerCase();
-      word += kck;
-      input.maxLength = 1;
-    });
   console.log(word);
   if(a <= 5){
     harfuc();
@@ -96,6 +88,14 @@ async function combineValues() {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
     const sozluk = wordsText.split('\n');
+    let word = '';
+  const divs = document.querySelector('.kel');
+  const inputs = divs.querySelectorAll('.kel input');
+    inputs.forEach(input => {
+      const kck = input.value.toLowerCase();
+      word += kck;
+      input.maxLength = 1;
+    });
     if (sozluk.includes(word)) {
       if(document.querySelector(".gk")){
         let i = document.querySelectorAll('.gk').length - 1;
@@ -144,6 +144,14 @@ async function combineValues() {
     const response = await fetch('ucharfliler.txt');
     const wordsText = await response.text();
     const sozluk = wordsText.split('\n');
+    let word = '';
+  const divs = document.querySelector('.kel');
+  const inputs = divs.querySelectorAll('.kel input');
+    inputs.forEach(input => {
+      const kck = input.value.toUpperCase();
+      word += kck;
+      input.maxLength = 1;
+    });
     if (sozluk.includes(word)) {
       if(document.querySelector(".gk")){
         let i = document.querySelectorAll('.gk').length - 1;
