@@ -1,3 +1,4 @@
+
 const plybtn = document.querySelector('.btn');
 plybtn.addEventListener("click", () => {
   plybtn.style.animation="bb 1s ease-in-out forwards";
@@ -91,7 +92,7 @@ async function combineValues() {
     harfdba();
   }
   }
-  function harfdba(){
+  async function harfdba(){
   try {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
@@ -139,7 +140,7 @@ async function combineValues() {
     console.error('Error fetching or reading words.txt:', error);
   }
 }
-  function harfuc(){
+  async function harfuc(){
     try {
     const response = await fetch('ucharfliler.txt');
     const wordsText = await response.text();
