@@ -90,6 +90,7 @@ async function combineValues() {
   } else{
     harfdba();
   }
+  }
   function harfdba(){
   try {
     const response = await fetch('words.txt');
@@ -133,7 +134,6 @@ async function combineValues() {
             }, 3000);
             });
       }, 1200);
-
   }
 } catch (error) {
     console.error('Error fetching or reading words.txt:', error);
@@ -183,12 +183,10 @@ async function combineValues() {
             }, 3000);
             });
       }, 1200);
-
   }
 } catch (error) {
     console.error('Error fetching or reading words.txt:', error);
   }
-}
 }
 function createNewDiv() {
   const newDiv = document.createElement('div');
