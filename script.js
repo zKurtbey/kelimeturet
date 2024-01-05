@@ -90,7 +90,7 @@ async function combineValues() {
   } else{
     harfdba();
   }
-  function harfdba();{
+  function harfdba(){
   try {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
