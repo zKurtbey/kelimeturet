@@ -91,7 +91,6 @@ async function combineValues() {
   } else{
     harfdba();
   }
-  }
   async function harfdba(){
   try {
     const response = await fetch('words.txt');
@@ -144,8 +143,7 @@ async function combineValues() {
     try {
     const response = await fetch('ucharfliler.txt');
     const wordsText = await response.text();
-    const sozlukkesilmis = wordsText.split('\n');
-      const sozluk = sozlukkesilmis.toLowerCase();
+    const sozluk = wordsText.split('\n');
     if (sozluk.includes(word)) {
       if(document.querySelector(".gk")){
         let i = document.querySelectorAll('.gk').length - 1;
@@ -189,6 +187,7 @@ async function combineValues() {
     console.error('Error fetching or reading words.txt:', error);
   }
 }
+  }
 function createNewDiv() {
   const newDiv = document.createElement('div');
   newDiv.setAttribute("class", "kel");
