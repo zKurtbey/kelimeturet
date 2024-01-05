@@ -1,4 +1,3 @@
-
 const plybtn = document.querySelector('.btn');
 plybtn.addEventListener("click", () => {
   plybtn.style.animation="bb 1s ease-in-out forwards";
@@ -75,19 +74,9 @@ function moveToNextInput(currentInput) {
 }
 async function combineValues() {
   if(document.querySelector('.gk')){
+  console.log(lastword);
   }
-  console.log(a);
-  if(a <= 5){
-    harfuc();
-  } else{
-    harfdba();
-  }
-  async function harfdba(){
-  try {
-    const response = await fetch('words.txt');
-    const wordsText = await response.text();
-    const sozluk = wordsText.split('\n');
-    let word = '';
+  let word = '';
   const divs = document.querySelector('.kel');
   const inputs = divs.querySelectorAll('.kel input');
     inputs.forEach(input => {
@@ -95,62 +84,11 @@ async function combineValues() {
       word += kck;
       input.maxLength = 1;
     });
-    if (sozluk.includes(word)) {
-      if(document.querySelector(".gk")){
-        let i = document.querySelectorAll('.gk').length - 1;
-        if(!lastword.includes(word)){
-          const gkson = document.querySelectorAll(".gk")[i];
-          console.log(lastword);
-          if(gkson.querySelector("#sonharf").value == document.querySelector(".kel #basharf").value){
-            lastword.push(word);
-            dogru();
-        } else {
-            harfuyus();
-      } 
-        }else {
-            oncedenyaz();
-        }
-      } else {
-        lastword.push(word);
-        dogru();
-      }
-  } else {
-      fail();
-      setTimeout(() => {
-        let a = document.querySelectorAll('.gk').length;
-        const yenilgi = document.querySelector('.ynl');
-        const vignette = document.querySelector('.vignette');
-        vignette.style="animation: vignet 1.5s ease-in-out forwards";
-          yenilgi.style="animation: ynl 1s ease-in-out forwards";
-        yenilgi.querySelector(".ynl h2").innerHTML="Toplamda "+a+" kelime buldunuz.";
-          const kapat = document.querySelector("#Layer_1");
-          kapat.addEventListener('click', () => {
-            yenilgi.style="animation: ynlkpt 1s ease-in-out forwards";
-            vignette.style="animation: vignetbck 1s ease-in-out forwards";
-            setTimeout(() => {
-              yenilgi.style="";
-              vignette.style="";
-            }, 3000);
-            });
-      }, 1200);
-  }
-} catch (error) {
-    console.error('Error fetching or reading words.txt:', error);
-  }
-}
-  async function harfuc(){
-    try {
-    const response = await fetch('ucharfliler.txt');
+  console.log(word);
+  try {
+    const response = await fetch('words.txt');
     const wordsText = await response.text();
     const sozluk = wordsText.split('\n');
-    let word = '';
-  const divs = document.querySelector('.kel');
-  const inputs = divs.querySelectorAll('.kel input');
-    inputs.forEach(input => {
-      const kck = input.value;
-      word += kck;
-      input.maxLength = 1;
-    });
     if (sozluk.includes(word)) {
       if(document.querySelector(".gk")){
         let i = document.querySelectorAll('.gk').length - 1;
@@ -189,12 +127,12 @@ async function combineValues() {
             }, 3000);
             });
       }, 1200);
+
   }
 } catch (error) {
     console.error('Error fetching or reading words.txt:', error);
   }
 }
-  }
 function createNewDiv() {
   const newDiv = document.createElement('div');
   newDiv.setAttribute("class", "kel");
