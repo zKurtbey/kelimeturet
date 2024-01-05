@@ -85,6 +85,12 @@ async function combineValues() {
       input.maxLength = 1;
     });
   console.log(word);
+  if(a <= 5){
+    harfuc();
+  } else{
+    harfdba();
+  }
+  function harfdba();{
   try {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
@@ -132,6 +138,57 @@ async function combineValues() {
 } catch (error) {
     console.error('Error fetching or reading words.txt:', error);
   }
+}
+  function harfuc(){
+    try {
+    const response = await fetch('ucharfliler.txt');
+    const wordsText = await response.text();
+    const sozlukkesilmis = wordsText.split('\n');
+      const sozluk = sozlukkesilmis.toLowerCase();
+    if (sozluk.includes(word)) {
+      if(document.querySelector(".gk")){
+        let i = document.querySelectorAll('.gk').length - 1;
+        if(!lastword.includes(word)){
+          const gkson = document.querySelectorAll(".gk")[i];
+          console.log(lastword);
+          if(gkson.querySelector("#sonharf").value == document.querySelector(".kel #basharf").value){
+            lastword.push(word);
+            dogru();
+        } else {
+            harfuyus();
+      } 
+        }else {
+            oncedenyaz();
+        }
+      } else {
+        lastword.push(word);
+        dogru();
+      }
+  } else {
+      fail();
+      setTimeout(() => {
+        let a = document.querySelectorAll('.gk').length;
+        const yenilgi = document.querySelector('.ynl');
+        const vignette = document.querySelector('.vignette');
+        vignette.style="animation: vignet 1.5s ease-in-out forwards";
+          yenilgi.style="animation: ynl 1s ease-in-out forwards";
+        yenilgi.querySelector(".ynl h2").innerHTML="Toplamda "+a+" kelime buldunuz.";
+          const kapat = document.querySelector("#Layer_1");
+          kapat.addEventListener('click', () => {
+            yenilgi.style="animation: ynlkpt 1s ease-in-out forwards";
+            vignette.style="animation: vignetbck 1s ease-in-out forwards";
+            setTimeout(() => {
+              yenilgi.style="";
+              vignette.style="";
+            }, 3000);
+            });
+      }, 1200);
+
+  }
+} catch (error) {
+    console.error('Error fetching or reading words.txt:', error);
+  }
+}
 }
 function createNewDiv() {
   const newDiv = document.createElement('div');
