@@ -76,6 +76,7 @@ function moveToNextInput(currentInput) {
 async function combineValues() {
   if(document.querySelector('.gk')){
   }
+  console.log(a);
   if(a <= 5){
     harfuc();
   } else{
@@ -146,7 +147,7 @@ async function combineValues() {
   const divs = document.querySelector('.kel');
   const inputs = divs.querySelectorAll('.kel input');
     inputs.forEach(input => {
-      const kck = input.value.toUpperCase();
+      const kck = input.value;
       word += kck;
       input.maxLength = 1;
     });
