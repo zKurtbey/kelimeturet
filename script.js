@@ -1,8 +1,3 @@
-const plybtn = document.querySelector('.btn');
-plybtn.addEventListener("click", () => {
-  plybtn.style.animation="bb 1s ease-in-out forwards";
-  start();
-});
 let tik = 0;
 document.body.addEventListener("keypress", function(event) {
   tik++;
@@ -17,6 +12,11 @@ let lastword = [];
 let a = 0;
 const checkbox = document.querySelector('.chck');
 let container = document.getElementById('container');
+const plybtn = document.querySelector('.btn');
+plybtn.addEventListener("click", () => {
+  plybtn.style.animation="bb 1s ease-in-out forwards";
+  start();
+});
 function start() {
   tik = 2;
   if(checkbox.checked){
@@ -27,12 +27,12 @@ function start() {
   console.log(otoekle);
   document.querySelector("#checkbox").style.display="none";
   if(otoekle == "var"){
-    document.querySelector(".chckyz").innerHTML="Baş Harfler Otomatik Ekleniyor.";
+    document.querySelector(".chckyz").innerHTML="Baş harfler otomatik ekleniyor.";
     setTimeout(() => {
       document.querySelector("#chckb").style.display="none";
     }, 1000);
   } else{
-    document.querySelector(".chckyz").innerHTML="Baş Harfler Otomatik Eklenmiyor.";
+    document.querySelector(".chckyz").innerHTML="Baş harfler otomatik eklenmiyor.";
     setTimeout(() => {
       document.querySelector("#chckb").style.display="none";
     }, 1000);
@@ -89,7 +89,8 @@ async function combineValues() {
   try {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
-    const sozluk = wordsText.split('\n');
+    const sozluka = wordsText.toLowerCase();
+    const sozluk = sozluka.split('\n');
     if (sozluk.includes(word)) {
       if(document.querySelector(".gk")){
         let i = document.querySelectorAll('.gk').length - 1;
@@ -126,9 +127,8 @@ async function combineValues() {
               yenilgi.style="";
               vignette.style="";
             }, 3000);
-            });
+          });
       }, 1200);
-
   }
 } catch (error) {
     console.error('Error fetching or reading words.txt:', error);
@@ -138,31 +138,64 @@ function createNewDiv() {
   const newDiv = document.createElement('div');
   newDiv.setAttribute("class", "kel");
   container.appendChild(newDiv);
-  a++;
   console.log(a);
   if (a <= 5){
-    var newInput = document.createElement('input');
-      newInput.type = 'text';
-      newDiv.appendChild(newInput);
-      newInput.classList.add("hrf");
-      newInput.setAttribute("oninput", "moveToNextInput(this)");
-      newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
+    for(i = 0; i < 3; i++){ 
       var newInput = document.createElement('input');
       newInput.type = 'text';
       newDiv.appendChild(newInput);
       newInput.classList.add("hrf");
       newInput.setAttribute("oninput", "moveToNextInput(this)");
     newInput.maxLength = 1;
-      var newInput = document.createElement('input');
-      newInput.type = 'text';
-      newDiv.appendChild(newInput);
-      newInput.classList.add("hrf");
-      newInput.setAttribute("oninput", "moveToNextInput(this)");
-      document.querySelector(".kel .hrf").focus();
-      newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
+    }
+    document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+    document.querySelectorAll('.kel input')[2].setAttribute('id', 'sonharf');
+  }else if (a <= 10){
+      for(i = 0; i < 4; i++){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[3].setAttribute('id', 'sonharf'); 
+  }else if (a <= 15){
+      for(i = 0; i < 5; i++){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[4].setAttribute('id', 'sonharf'); 
+  }else if (a <= 20){
+      for(i = 0; i < 6; i++){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[5].setAttribute('id', 'sonharf'); 
+  }else if (a > 20){
+      for(i = 0; i < 7; i++){ 
+        var newInput = document.createElement('input');
+        newInput.type = 'text';
+        newDiv.appendChild(newInput);
+        newInput.classList.add("hrf");
+        newInput.setAttribute("oninput", "moveToNextInput(this)");
+      newInput.maxLength = 1;
+      }
+      document.querySelectorAll('.kel input')[0].setAttribute('id', 'basharf');
+      document.querySelectorAll('.kel input')[6].setAttribute('id', 'sonharf'); 
+  }
+  if(document.querySelector('.gk')){
       let i = document.querySelectorAll('.gk').length - 1;
       if(otoekle === "var"){
         const gkson = document.querySelectorAll(".gk")[i];
@@ -172,148 +205,7 @@ function createNewDiv() {
       } else{
       document.querySelectorAll('.kel input')[0].focus();
       }
-    }
-  }else if (a <= 10){
-        var newInput = document.createElement('input');
-        newInput.type = 'text';
-        newDiv.appendChild(newInput);
-        newInput.classList.add("hrf");
-        newInput.setAttribute("oninput", "moveToNextInput(this)");
-        newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-        for (var i = 0; i < 2; i++) {
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.maxLength = 1;
-        }
-        var newInput = document.createElement('input');
-        newInput.type = 'text';
-        newDiv.appendChild(newInput);
-        newInput.classList.add("hrf");
-        newInput.setAttribute("oninput", "moveToNextInput(this)");
-        document.querySelector(".kel .hrf").focus();
-        newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-    if(otoekle == "var"){
-      const gkson = document.querySelectorAll(".gk")[i];
-      document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-      document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-      document.querySelectorAll('.kel input')[1].focus();
-    } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  }else if (a <= 15){
-        var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-          for (var i = 0; i < 3; i++) {
-            var newInput = document.createElement('input');
-            newInput.type = 'text';
-            newDiv.appendChild(newInput);
-            newInput.classList.add("hrf");
-            newInput.setAttribute("oninput", "moveToNextInput(this)");
-            const maxLength = 1;
-          }
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          document.querySelector(".kel .hrf").focus();
-          newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      if(otoekle == "var"){
-        const gkson = document.querySelectorAll(".gk")[i];
-        document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-        document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-        document.querySelectorAll('.kel input')[1].focus();
-      } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  }else if (a <= 20){
-        var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-          for (var i = 0; i < 4; i++) {
-            var newInput = document.createElement('input');
-            newInput.type = 'text';
-            newDiv.appendChild(newInput);
-            newInput.classList.add("hrf");
-            newInput.setAttribute("oninput", "moveToNextInput(this)");
-            newInput.maxLength = 1;
-          }
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          document.querySelector(".kel .hrf").focus();
-          newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      if(otoekle == "var"){
-        const gkson = document.querySelectorAll(".gk")[i];
-        document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-        document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-        document.querySelectorAll('.kel input')[1].focus();
-      } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  }else if (a > 20){
-        var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          newInput.setAttribute("id", "basharf");
-    newInput.maxLength = 1;
-          for (var i = 0; i < 4; i++) {
-            var newInput = document.createElement('input');
-            newInput.type = 'text';
-            newDiv.appendChild(newInput);
-            newInput.classList.add("hrf");
-            newInput.setAttribute("oninput", "moveToNextInput(this)");
-            newInput.maxLength = 1;
-          }
-          var newInput = document.createElement('input');
-          newInput.type = 'text';
-          newDiv.appendChild(newInput);
-          newInput.classList.add("hrf");
-          newInput.setAttribute("oninput", "moveToNextInput(this)");
-          document.querySelector(".kel .hrf").focus();
-          newInput.setAttribute("id", "sonharf");
-    newInput.maxLength = 1;;
-    if(document.querySelector('.gk')){
-      let i = document.querySelectorAll('.gk').length - 1;
-      if(otoekle == "var"){
-        const gkson = document.querySelectorAll(".gk")[i];
-        document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
-        document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
-        document.querySelectorAll('.kel input')[1].focus();
-      } else{
-      document.querySelectorAll('.kel input')[0].focus();
-      }
-    }
-  a++;
+    a++;
 }
 }
 function triggerBackgroundAnimation() {
@@ -358,7 +250,7 @@ function dogru(){
     }, 100);
 }
 function harfuyus(){
-  document.getElementById("hatasebep").innerHTML="Son harfler uyuşmuyor!";
+  document.getElementById("hatasebep").innerHTML="Baş harfini uyuşmuyor!";
   document.querySelector("#hata").style="animation: hatavar 1.25s ease-in-out alternate; animation-iteration-count: 2";
   setTimeout(() => {
     document.querySelector("#hata").style="";
@@ -369,7 +261,7 @@ function harfuyus(){
       document.querySelectorAll('.kel input').forEach((input) => {
         input.value="";
         input.maxLength = 1;
-    });
+      });
     }, 200);
     document.querySelector(".kel input").focus();
     document.querySelector(".kel").style="";
@@ -377,7 +269,7 @@ function harfuyus(){
 }
 function oncedenyaz(){
 
-  document.getElementById("hatasebep").innerHTML="Bu kelimeyi zaten yazdınız!";
+  document.getElementById("hatasebep").innerHTML="Bu kelimeyi daha önce yazdınız!";
   document.querySelector("#hata").style="animation: hatavar 1.25s ease-in-out alternate; animation-iteration-count: 2";
   setTimeout(() => {
     document.querySelector("#hata").style="";
@@ -426,7 +318,7 @@ lastword = [];
       a=0;
       setTimeout(() => {
         tik = 0;
-        }, 1000);
+      }, 1000);
     }, 1000);
   }, 2000);
 }
