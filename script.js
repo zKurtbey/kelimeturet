@@ -424,7 +424,7 @@ lastword = [];
       }, 500);
       plybtn.style.animation="gg 1s ease-in-out forwards";
       a=0;
-      
+      tik = 0;
     }, 1000);
   }, 2000);
 }
