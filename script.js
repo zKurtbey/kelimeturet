@@ -6,7 +6,7 @@ plybtn.addEventListener("click", () => {
 let tik = 0;
 document.body.addEventListener("keypress", function(event) {
   tik++;
-  if(tik < 2){
+  if(tik == 1){
     if(event.key === "Enter") {
       plybtn.style.animation="bb 1s ease-in-out forwards";
       start();
@@ -18,6 +18,7 @@ let a = 0;
 const checkbox = document.querySelector('.chck');
 let container = document.getElementById('container');
 function start() {
+  tik = 0;
   if(checkbox.checked){
   otoekle = "var";
 } else{
