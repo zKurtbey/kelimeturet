@@ -137,6 +137,7 @@ function createNewDiv() {
   const newDiv = document.createElement('div');
   newDiv.setAttribute("class", "kel");
   container.appendChild(newDiv);
+  a++;
   console.log(a);
   if (a <= 5){
     var newInput = document.createElement('input');
