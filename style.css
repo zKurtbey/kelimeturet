@@ -23,6 +23,7 @@ body {
   top: 5%;
   left: 5%;
   font-size: 300%;
+  font-display: swap;
 }
 
 #trt {
@@ -31,6 +32,7 @@ body {
   top: 14%;
   left: 12%;
   font-size: 300%;
+  font-display: swap;
 }
   #chckb{
     position: absolute;
@@ -57,6 +59,7 @@ body {
     font-family: Josefin Sans;
     display: inline-block;
     font-size: 10px;
+    font-display: swap;
   }
   #hata{
     position: absolute;
@@ -86,6 +89,7 @@ body {
     width: 10em;
     height: 2.75em;
     overflow: hidden;
+    font-display: swap;
   }
   @keyframes hatavar{
     from{width: 0; display: none;}
@@ -327,6 +331,7 @@ body {
   top: 0;
   left: 5%;
   font-size: 90px;
+  font-display: swap;
 }
 
 #trt {
@@ -335,6 +340,7 @@ body {
   top: 9%;
   left: 12%;
   font-size: 90px;
+  font-display: swap;
 }
 #chckb{
     position: absolute;
@@ -363,6 +369,7 @@ body {
     display: inline-block;
     font-size: 15px;
     width: 12em;
+    font-display: swap;
   }
   #hata{
     position: absolute;
