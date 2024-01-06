@@ -6,7 +6,7 @@ plybtn.addEventListener("click", () => {
 let tik = 0;
 document.body.addEventListener("keypress", function(event) {
   tik++;
-  if(tik == 1){
+  if(tik < 2){
     if(event.key === "Enter") {
       plybtn.style.animation="bb 1s ease-in-out forwards";
       start();
@@ -18,7 +18,7 @@ let a = 0;
 const checkbox = document.querySelector('.chck');
 let container = document.getElementById('container');
 function start() {
-  tik = 0;
+  tik = 2;
   if(checkbox.checked){
   otoekle = "var";
 } else{
@@ -396,7 +396,6 @@ function oncedenyaz(){
 
 }
 function fail(){
-tik = 0;
 lastword = [];
     const hrf = document.querySelectorAll('.kel .hrf');
     hrf.forEach((hrf) => {
@@ -425,7 +424,9 @@ lastword = [];
       }, 500);
       plybtn.style.animation="gg 1s ease-in-out forwards";
       a=0;
-      tik = 0;
+      setTimeout(() => {
+        tik = 0;
+        }, 1000);
     }, 1000);
   }, 2000);
 }
