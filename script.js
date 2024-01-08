@@ -115,17 +115,13 @@ async function combineValues() {
       setTimeout(() => {
         let a = document.querySelectorAll('.gk').length;
         const yenilgi = document.querySelector('.ynl');
-        const vignette = document.querySelector('.vignette');
-        vignette.style="animation: vignet 1.5s ease-in-out forwards";
           yenilgi.style="animation: ynl 1s ease-in-out forwards";
         yenilgi.querySelector(".ynl h2").innerHTML="Toplamda "+a+" kelime buldunuz.";
           const kapat = document.querySelector("#Layer_1");
           kapat.addEventListener('click', () => {
             yenilgi.style="animation: ynlkpt 1s ease-in-out forwards";
-            vignette.style="animation: vignetbck 1s ease-in-out forwards";
             setTimeout(() => {
               yenilgi.style="";
-              vignette.style="";
             }, 3000);
           });
       }, 1200);
