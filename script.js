@@ -24,7 +24,6 @@ function start() {
 } else{
   otoekle = "yok";
 }
-  console.log(otoekle);
   document.querySelector("#checkbox").style.display="none";
   if(otoekle == "var"){
     document.querySelector(".chckyz").innerHTML="Baş harfler otomatik ekleniyor.";
@@ -75,7 +74,6 @@ function moveToNextInput(currentInput) {
 }
 async function combineValues() {
   if(document.querySelector('.gk')){
-  console.log(lastword);
   }
   let word = '';
   const divs = document.querySelector('.kel');
@@ -85,7 +83,6 @@ async function combineValues() {
       word += kck;
       input.maxLength = 1;
     });
-  console.log(word);
   try {
     const response = await fetch('words.txt');
     const wordsText = await response.text();
@@ -96,7 +93,6 @@ async function combineValues() {
         let i = document.querySelectorAll('.gk').length - 1;
         if(!lastword.includes(word)){
           const gkson = document.querySelectorAll(".gk")[i];
-          console.log(lastword);
           if(gkson.querySelector("#sonharf").value == document.querySelector(".kel #basharf").value){
             lastword.push(word);
             dogru();
@@ -127,14 +123,12 @@ async function combineValues() {
       }, 1200);
   }
 } catch (error) {
-    console.error('Error fetching or reading words.txt:', error);
   }
 }
 function createNewDiv() {
   const newDiv = document.createElement('div');
   newDiv.setAttribute("class", "kel");
   container.appendChild(newDiv);
-  console.log(a);
   if (a <= 5){
     for(i = 0; i < 3; i++){ 
       var newInput = document.createElement('input');
