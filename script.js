@@ -189,7 +189,9 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       if(otoekle === "var"){
         const gkson = document.querySelectorAll(".gk")[i];
-    
+
+        console.log(gkson.querySelector("#sonharf").value);
+        
         if(gkson.querySelector("#sonharf").value == "Ğ"){
 
             const alfabe = ["A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z"];
