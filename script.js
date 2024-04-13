@@ -190,11 +190,13 @@ function createNewDiv() {
       if(otoekle === "var"){
         const gkson = document.querySelectorAll(".gk")[i];
     
-        if(document.querySelector("#sonharf").value == "Ğ"){
+        if(gkson.querySelector("#sonharf").value == "Ğ"){
 
             const alfabe = ["A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z"];
 
             document.querySelector('.kel #basharf').value = alfabe[Math.floor(Math.random() * alfabe.length)];
+
+          console.log(alfabe[Math.floor(Math.random() * alfabe.length)]);
 
         }
 
