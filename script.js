@@ -93,7 +93,7 @@ async function combineValues() {
         let i = document.querySelectorAll('.gk').length - 1;
         if(!lastword.includes(word)){
           const gkson = document.querySelectorAll(".gk")[i];
-          if((gkson.querySelector("#sonharf").value == "ğ" || gkson.querySelector("#sonharf").value == "Ğ" && gkson.querySelector("#sonharf").value == document.querySelector(".kel #basharf").value){
+          if(gkson.querySelector("#sonharf").value == "ğ" || gkson.querySelector("#sonharf").value == "Ğ" && gkson.querySelector("#sonharf").value == document.querySelector(".kel #basharf").value){
             lastword.push(word);
             dogru();
         } else {
