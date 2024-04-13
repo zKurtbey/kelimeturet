@@ -195,6 +195,15 @@ function createNewDiv() {
       let i = document.querySelectorAll('.gk').length - 1;
       if(otoekle === "var"){
         const gkson = document.querySelectorAll(".gk")[i];
+    
+        if(document.querySelector("#sonharf").value == "Ğ"){
+
+            const alfabe = ["A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z"];
+
+            document.querySelector('.kel #basharf').value = alfabe[Math.floor(Math.random() * alfabe.length)];
+
+        }
+
         document.querySelector('.kel #basharf').value = gkson.querySelector('#sonharf').value;
         document.querySelector('.kel #basharf').style = "border-bottom: 2px rgb(50, 120, 50) solid";
         document.querySelectorAll('.kel input')[1].focus();
