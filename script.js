@@ -192,7 +192,7 @@ function createNewDiv() {
 
         console.log(gkson.querySelector("#sonharf").value);
         
-        if(gkson.querySelector("#sonharf").value == "Ğ"){
+        if(gkson.querySelector("#sonharf").value == "Ğ" || gkson.querySelector("#sonharf").value == "ğ"){
 
             const alfabe = ["A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z"];
 
